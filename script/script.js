@@ -1,5 +1,5 @@
 const divDisplayImages = document.querySelector('#div-images');
-//const document = document.querySelector('document');
+
 const searchButton = document.querySelector('#search-button');
 const text = document.querySelector('#text');
 const number = document.querySelector('#number');
@@ -24,7 +24,7 @@ $(hideFormBtn).click(function () {
         showFormBtn.style.display = "block";
         showFormBtn.innerText = "Visa sökfält";
         hideFormBtn.style.display = "none";
-        //body.style.height = "100%";
+        
     });
 });
 $(showFormBtn).click(function () {
@@ -52,7 +52,7 @@ searchButton.addEventListener('click', function (event) {
     }
     if (text.value == "") {
         alert('Du måste skriva i söktext');
-        //searchButton.style.cursor = "cursor";
+        
     }
     else if (number.value < 1) {
         alert('Du måste fylla i antal bilder');
@@ -95,7 +95,7 @@ searchButton.addEventListener('click', function (event) {
                     divDisplayImages.appendChild(img);
                     //function för att öppna bild i originalstorlek i nytt fönster
                     img.addEventListener('click', function () {
-                        //window.open(`https://live.staticflickr.com/${data.photos.photo[i].server}/${data.photos.photo[i].id}_${data.photos.photo[i].secret}_${selectedSize}.jpg`, "_blank", "toolbar=yes,top=300,left=300,width=700,height=600");
+                        
                         window.open(`https://live.staticflickr.com/${data.photos.photo[i].server}/${data.photos.photo[i].id}_${data.photos.photo[i].secret}_${selectedSize}.jpg`, "_blank", "toolbar=yes, fullscreen=yes");
                     });
 
