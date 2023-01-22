@@ -4,7 +4,7 @@ body {
     border: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
-    /*background-color: hsl(0, 0%, 0%);*/
+    
     background-image: linear-gradient(hsl(0, 0%, 16%), hsl(242, 43%, 67%));
     display: flex;
     flex-flow: row wrap;
